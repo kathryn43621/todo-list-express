@@ -1,7 +1,129 @@
-h1{
-    color: red;
+* {
+    box-sizing: border-box;
 }
-.completed{
+
+body {
+    background-image: url(./6.png);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;  
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    bottom: -80px;
+    left: -250px;
+    background-image: url(./momo.png);
+    height: 340px;
+    width: 450px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(-20deg) scaleX(-1);
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: -40px;
+    right: 0px;
+    background-image: url(./momo.png);
+    height: 240px;
+    width: 240px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(20deg);
+}
+
+.container {
+    padding: 5vh 20px;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+}
+
+h1 {
+    font-family: 'League Spartan', sans-serif;
+    color: #545454;
+    font-weight: 600;
+    margin-left: 36px;
+}
+
+.box {
+    background-color: #E8E4D9;
+    padding: 20px;
+    position: relative;
+    /* z-index: 1; */
+    border-radius: 25px;
+    margin-bottom: 20px;
+    font-family: 'League Spartan', sans-serif;
+    color: #545454;
+    font-weight: 300;
+    display: flex;
+    gap: 30px;
+}
+
+.subContainer {
+    width: 50%;
+}
+
+.rightList {
+    margin: 16px;
+    text-align: center;
+}
+
+.styled-form {
+    background-color: #EFE3DE; /* Set your desired background color */
+    padding: 20px; /* Add padding for spacing inside the form */
+    margin: auto;
+    border: 1px dashed #545454; 
+    border-radius: 25px;
+    display: flex;
+  }
+  
+  .styled-form input {
+    align-items: center; /* Vertically align children in the center */
+    justify-content: center;
+    background-color: transparent;
+    color: #545454;
+    width: 100%; /* Make input fields expand to the full width of the form */
+    border: 1px solid transparent;
+  }  
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 20px;
+    background-color: #DEAC91;
+    border: 1px dashed #545454;
+    border-radius: 25px;
+    margin: 15px;
+}
+
+li.item {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    display: inline-block;
+}
+
+.plantIcon {
+    color: #2D735E;
+}
+
+.completed {
     color: gray;
     text-decoration: line-through;
 }
