@@ -78,7 +78,6 @@ h1 {
 
 .styled-form {
     background-color: #EFE3DE; /* Set your desired background color */
-    padding: 20px; /* Add padding for spacing inside the form */
     margin: auto;
     border: 1px dashed #545454; 
     border-radius: 25px;
@@ -92,6 +91,7 @@ h1 {
     color: #545454;
     width: 100%; /* Make input fields expand to the full width of the form */
     border: 1px solid transparent;
+    padding: 20px;
   }  
 
 ul {
